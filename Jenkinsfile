@@ -48,7 +48,7 @@ pipeline {
     stages {
         stage("mvn build"){
             steps {
-                sh "mvn clean package"
+                sh "mvn install"
             }
         }
         // stage("push artifact") {
